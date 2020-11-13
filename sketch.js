@@ -7,7 +7,7 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 var constrainedLog;
-var chain1;
+var chain2;
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -42,7 +42,7 @@ function setup(){
 
     bird = new Bird(100,100);
 
-    chain1 = new Chain(bird.body,constrainedLog.body);
+    chain2 = new Chain(bird.body,constrainedLog.body);
 
     console.log(bird);
     console.log(constrainedLog);
@@ -73,7 +73,7 @@ function draw(){
     platform.display();
 
     constrainedLog.display();
-    chain1.display();
+    chain2.display();
 
     
     
